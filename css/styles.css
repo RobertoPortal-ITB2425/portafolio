@@ -564,8 +564,8 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 
     /* Ajustes para los iconos sociales en el footer */
     .social-icons img {
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
     }
 }
 

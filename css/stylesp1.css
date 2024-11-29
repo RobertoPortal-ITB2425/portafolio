@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    margin-top: 80px;
 }
 
 /* Estilo base para enlaces */
@@ -232,18 +233,21 @@ header h1 {
     padding: 50px 20px;
     background-color: #3e3e3e;
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    gap: 20px; /* Espaciado entre la imagen y el texto */
     border-radius: 16px;
-    align-items: center;
 }
 
-.caja-imagen {
-    position: relative;
-    margin-left: 5px;
+/* Contenedor para la imagen */
+.caja-contenido {
+    display: flex;
+    flex-direction: row; /* Imagen y texto en fila */
+    align-items: center; /* Alinear verticalmente */
+    gap: 20px; /* Espaciado entre elementos */
 }
 
 .imagen-container {
-    position: relative;
     width: 300px;
     height: 300px;
 }
@@ -255,26 +259,15 @@ header h1 {
     border-radius: 8px;
 }
 
-.flecha {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    color: white;
-    font-size: 1.2em;
-    border: none;
-    padding: 4px 6px;
-    cursor: pointer;
-    z-index: 10;
+/* Estilo del texto */
+.descripcion {
+    text-align: left;
+    font-size: 16px; /* Tamaño del texto */
+    color: white; /* Color del texto */
+    line-height: 1.5; /* Espaciado entre líneas */
+    max-width: 600px; /* Ancho máximo del texto */
 }
 
-.flecha.izquierda {
-    left: 5px;
-}
-
-.flecha.derecha {
-    right: 5px;
-}
 
 /* Estilo para los campos de formulario */
 input[type="text"], input[type="email"], textarea {

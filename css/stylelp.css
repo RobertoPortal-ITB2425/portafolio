@@ -155,10 +155,10 @@ nav ul li a:hover {
 
 .proyecto-content {
     display: flex;
-    flex-direction: column; /* Elementos en columna */
-    align-items: flex-start; /* Alineación a la izquierda */
-    gap: 10px; /* Espaciado entre los elementos */
-    margin-left: 20px; /* Margen izquierdo */
+    flex-direction: row; /* Elementos en columna */
+    align-items: center; /* Alineación a la izquierda */
+    gap: 20px; /* Espaciado entre los elementos */
+    margin-left: 0px; /* Margen izquierdo */
 }
 
 .proyecto-image img {
@@ -175,6 +175,7 @@ nav ul li a:hover {
 
 .proyecto-text {
     text-align: left;
+    flex: 1;
 }
 
 .proyecto-text h2 {
