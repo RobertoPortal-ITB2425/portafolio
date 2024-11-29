@@ -123,21 +123,30 @@ nav ul li a {
 
 /* Estilos del botón de Home */
 .home-button {
+    all: unset; /* Elimina todos los estilos predeterminados del navegador */
     width: 40px;
     height: 40px;
-    border-radius: 50%; /* Hace que el botón sea redondo */
+    border-radius: 50%;
     background-color: #f0f0f0;
     padding: 5px;
     transition: transform 0.2s ease;
+    text-align: center;
+    cursor: pointer;
 }
 
 .home-button:hover {
-    transform: scale(1.1); /* Efecto de agrandamiento al pasar el mouse */
+    transform: scale(1.1);
 }
+
+.home-button:focus-visible {
+    outline: none; /* Elimina contorno cuando el enfoque es visible */
+}
+
 
 nav ul li a:hover {
     text-decoration: underline;
 }
+
 
 /* Proyectos */
 .proyectos {
